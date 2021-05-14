@@ -43,7 +43,7 @@
         android:layout_width="match_parent"
         android:text="Add User"
         android:layout_height="wrap_content"
-        android:onClick="signin"/>
+        android:onClick="signIn"/>
 
 
 
