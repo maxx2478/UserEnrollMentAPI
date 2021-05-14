@@ -2,6 +2,8 @@ package com.exotic.myapplication.network
 
 import com.exotic.myapplication.model.UserData
 import com.exotic.myapplication.model.Users
+import com.google.gson.JsonObject
+import org.json.JSONObject
 import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.GET
@@ -15,7 +17,7 @@ interface UsersApi {
     fun getAllUsers(): Call<UserData>
 
     @POST("auth/register")
-    fun createUser(@Body user:Users): Call<Users>
+    fun createUser(@Body map:Map<String, String>): Call<Users>
 
 
 
