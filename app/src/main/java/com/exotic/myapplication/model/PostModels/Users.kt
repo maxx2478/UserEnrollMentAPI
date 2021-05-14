@@ -1,4 +1,4 @@
-package com.exotic.myapplication.model
+package com.exotic.myapplication.model.PostModels
 
 import com.google.gson.annotations.SerializedName
 

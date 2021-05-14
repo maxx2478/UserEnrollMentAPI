@@ -1,4 +1,4 @@
-package com.exotic.myapplication.model
+package com.exotic.myapplication.model.AllUsers
 
  data class Data(
     val __v: Int,
