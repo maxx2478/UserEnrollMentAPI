@@ -2,12 +2,11 @@ package com.exotic.myapplication.network
 
 import com.exotic.myapplication.model.ResponseModels.RegisterResponseModel
 import com.exotic.myapplication.model.AllUsers.UserData
+import com.exotic.myapplication.model.ResponseModels.FileModel
 import okhttp3.MultipartBody
+import okhttp3.RequestBody
 import retrofit2.Call
-import retrofit2.http.Body
-import retrofit2.http.GET
-import retrofit2.http.Multipart
-import retrofit2.http.POST
+import retrofit2.http.*
 
 interface UsersApi {
 
@@ -22,7 +21,7 @@ interface UsersApi {
     //Return url to attach with user profile
     @Multipart
     @POST("upload/images")
-    fun uploadimage(@Body multipartBody: MultipartBody): Call<String>
+    fun uploadimage(@Part image: MultipartBody.Part): Call<String>
 
 
 
